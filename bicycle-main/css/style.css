@@ -135,7 +135,7 @@ a {
 }
 
 .header__nav-list {
-  width: 500px;
+  width: 400px;
   justify-content: space-between;
   display: flex;
 }
@@ -593,29 +593,23 @@ a {
   cursor: pointer;
 }
 
-.goods__item {
-  width: 19%;
-  float: left;
-  padding: 5px;
-}
-
-.slider__item-wrp, .goods__item-wrp {
+.slider__item-wrp {
   background: #FFFEFE;
   min-height: 426px;
   color: #000000;
 }
 
-.slider__item img, .goods__item img {
+.slider__item img {
   width: 100%;
   height: 264px;
   margin: 0 0 35px;
 }
 
-.slider__item-content-wrp, .goods__item-content-wrp {
+.slider__item-content-wrp {
   padding: 0 40px 12px;
 }
 
-.slider__item h3, .goods__item h3 {
+.slider__item h3 {
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
@@ -623,17 +617,17 @@ a {
   color: #801019;
 }
 
-.slider__item a, .goods__item a {
+.slider__item a {
   color: #801019;
 }
-.slider__item a:hover, .slider__item a:focus, .goods__item a:hover, .goods__item a:focus {
+.slider__item a:hover, .slider__item a:focus {
   opacity: 0.8;
 }
-.slider__item a:active, .goods__item a:active {
+.slider__item a:active {
   color: #000000;
 }
 
-.slider__item p, .goods__item p {
+.slider__item p {
   font-family: inherit;
   width: 100px;
   font-size: 14px;
@@ -641,11 +635,11 @@ a {
   line-height: 15px;
 }
 
-.slider__item p:first-of-type, .goods__item p:first-of-type {
+.slider__item p:first-of-type {
   margin: 0 0 6px;
 }
 
-.slider__item button, .goods__item button {
+.slider__item button {
   margin: 33px 0 0 0;
   width: 100%;
   min-height: 40px;
@@ -662,10 +656,10 @@ a {
   text-transform: uppercase;
   cursor: pointer;
 }
-.slider__item button:hover, .slider__item button:focus, .goods__item button:hover, .goods__item button:focus {
+.slider__item button:hover, .slider__item button:focus {
   background: #290500;
 }
-.slider__item button:active, .goods__item button:active {
+.slider__item button:active {
   background: #f70a27;
 }
 
@@ -946,6 +940,15 @@ a {
 @media (max-width: 1920px) {
   .favourite {
     width: 90%;
+  }
+}
+
+.favourite--section {
+  padding: 50px 0 130px;
+}
+@media (max-width: 1400px) {
+  .favourite--section {
+    padding: 50px 0;
   }
 }
 
@@ -1369,6 +1372,111 @@ a {
   min-height: 15px;
 }
 
+.products-list {
+  padding: 132px 0 82px;
+}
+
+.products-list h2 {
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  text-transform: uppercase;
+  margin: 0 0 51px;
+}
+
+.products-list__wrp {
+  display: grid;
+  grid-template-columns: repeat(5, 18%);
+  justify-content: space-between;
+}
+@media (max-width: 1920px) {
+  .products-list__wrp {
+    grid-template-columns: repeat(4, 23%);
+  }
+}
+@media (max-width: 1400px) {
+  .products-list__wrp {
+    grid-template-columns: repeat(3, 30%);
+  }
+}
+@media (max-width: 1030px) {
+  .products-list__wrp {
+    grid-template-columns: repeat(2, 48%);
+  }
+}
+
+.products-list__item {
+  margin: 0 0 60px;
+}
+
+.products-list__content-wrp {
+  background: #FFFEFE;
+  min-height: 426px;
+  color: #000000;
+  padding: 0 40px 12px;
+}
+
+.products-list__content-wrp img {
+  width: 100%;
+  height: 264px;
+  margin: 0 0 35px;
+}
+
+.products-list__content-wrp h3 {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 12px;
+  color: #801019;
+}
+
+.products-list__content-wrp a {
+  color: #801019;
+}
+.products-list__content-wrp a:hover, .products-list__content-wrp a:focus {
+  opacity: 0.8;
+}
+.products-list__content-wrp a:active {
+  color: #000000;
+}
+
+.products-list__content-wrp p {
+  font-family: inherit;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.products-list__content-wrp p:first-of-type {
+  margin: 0 0 6px;
+}
+
+.products-list__wrp button {
+  margin: 33px 0 0 0;
+  width: 100%;
+  min-height: 40px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #801019;
+  color: #FFFEFE;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.products-list__wrp button:hover, .products-list__wrp button:focus {
+  background: #290500;
+}
+.products-list__wrp button:active {
+  background: #f70a27;
+}
+
 .footer {
   background: #282828;
   padding: 91px 0 104px;
@@ -1381,9 +1489,9 @@ a {
 
 .footer__nav-list a {
   font-family: inherit;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 18px;
   color: #FFFEFE;
   display: block;
   margin: 0 0 59px;
@@ -1449,7 +1557,7 @@ a {
 
 .footer__form button {
   min-height: 50px;
-  width: 104px;
+  width: 140px;
   background: #801019;
   text-transform: uppercase;
   display: flex;
