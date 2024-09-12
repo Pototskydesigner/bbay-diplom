@@ -72,7 +72,7 @@ Loc::loadMessages(__FILE__);
 <?
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/jquery.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/slick.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . 'js/scripts.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/scripts.js');
 ?>
 </body>
 
