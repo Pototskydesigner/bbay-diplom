@@ -2,6 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Мебельная компания");
 ?>
+
 	<main>
 	<section class="products">
 
@@ -86,6 +87,7 @@ $APPLICATION->SetTitle("Мебельная компания");
 		<img src="<?=SITE_TEMPLATE_PATH?>/img/ride-with-us-bycicle.jpg" alt="ride-us-pic">
 		<a href="#">по городу</a>
 	</section>
+		<section class="products">
 	<section class="city-bike">
 		<div class="container">
 			<h2>Городские велосипеды</h2>
