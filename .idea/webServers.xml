@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="3e895f6d-4d31-4a44-bf44-d426d14696b2" name="Тестовый Битрикс">
-        <fileTransfer rootFolder="/home/bitrix/www" accessType="SFTP" host="192.168.214.15" port="22" sshConfigId="3544bce9-476e-46a6-8e06-df7a63a38249" sshConfig="bitrix@192.168.214.15:22 password">
+      <webServer id="cfc92812-7786-4a6a-a6b3-b79962bdf1a3" name="Академия Битрикс">
+        <fileTransfer rootFolder="/home/bitrix/www" accessType="SFTP" host="192.168.85.65" port="22" sshConfigId="8759e5d5-8226-4366-8be8-18bb9bba6d2d" sshConfig="bitrix@192.168.85.65:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
